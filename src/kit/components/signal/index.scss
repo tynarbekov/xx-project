@@ -1,0 +1,23 @@
+@import '../../../assets/styles/variables';
+.signal-main {
+  display: flex;
+  margin: auto 0;
+  flex-direction: row;
+  .item {
+    margin: auto 3px 0 0;
+    background-color: $green;
+    width: 5px;
+    &:nth-child(1) {
+      height: 5px;
+    }
+    &:nth-child(2) {
+      height: 10px;
+    }
+    &:nth-child(3) {
+      height: 15px;
+    }
+  }
+  .low {
+    background-color: $light-gray;
+  }
+}

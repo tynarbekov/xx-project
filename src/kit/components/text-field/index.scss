@@ -1,0 +1,61 @@
+@import '../../../assets/styles/variables';
+.text-field {
+  position: relative;
+  .wrapper {
+    position: relative;
+  }
+  .input:focus {
+    border: 0.5px solid $blue;
+    box-shadow: 0 4px 20px rgba(71, 89, 250, 0.1);
+  }
+  .input.password {
+    text-security: disc !important;
+    -webkit-text-security: disc !important;
+    -mox-text-security: disc !important;
+    -moz-text-security: disc !important;
+    -ms-text-security: disc !important;
+  }
+  .input {
+    position: relative;
+    color: $blue;
+    outline: none;
+    -webkit-text-fill-color: $blue-zodiac;
+    -webkit-box-shadow: inset 0 0 0 50px $white;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    -moz-appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    &:focus + legend {
+      transform: translate(0, -170%) scale(.95);
+      color: $blue-zodiac;
+    }
+    &:not(:placeholder-shown) + legend {
+      transform: translate(0, -170%) scale(.95);
+      color: $blue-zodiac;
+    }
+    &:-webkit-autofill {
+      background: $white !important;
+    }
+    &:-webkit-autofill + legend {
+      transform: translate(0, -170%) scale(.95);
+      color: $blue-zodiac;
+    }
+  }
+  legend {
+    color: $blue-zodiac;
+  }
+  .input + legend {
+    top: 50%;
+    left: 16px;
+    transition: 0.2s;
+    padding-left: 6px;
+    position: absolute;
+    padding-right: 10px;
+    pointer-events: none;
+    background-color: $white;
+    transform: translate(0, -50%);
+  }
+}

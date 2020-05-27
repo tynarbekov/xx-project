@@ -1,0 +1,26 @@
+@import '../../../assets/styles/variables';
+
+.login-main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  .login-paper {
+    margin: auto;
+    display: flex;
+    min-width: 350px;
+    flex-direction: column;
+    .title {
+      font-size: 18px;
+      margin: 10px auto;
+    }
+    .login-item {
+      margin: 10px auto;
+    }
+    .login-loader {
+      margin: 10px auto;
+    }
+  }
+  .error-message {
+    color: $dark-red;
+  }
+}

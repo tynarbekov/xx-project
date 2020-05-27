@@ -1,0 +1,39 @@
+@import '../../../assets/styles/variables';
+.home-main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  .home-paper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    min-width: 325px;
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .title {
+        font-size: 26px;
+      }
+    }
+    .info-block {
+      margin: 25px 0;
+      display: flex;
+      position: relative;
+      .spinner {
+        left: 50%;
+        position: absolute;
+      }
+      .message {
+        margin: auto;
+      }
+      .loading {
+        color: $light-gray;
+      }
+    }
+    .logout {
+      margin: auto auto 0 auto;
+    }
+  }
+}
